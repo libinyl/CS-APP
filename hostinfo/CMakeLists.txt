@@ -1,0 +1,1 @@
+add_executable(hostinfo hostinfo.c ../include/csapp.h ../lib/csapp.c)

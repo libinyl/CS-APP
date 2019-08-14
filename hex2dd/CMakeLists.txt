@@ -1,0 +1,1 @@
+add_executable(hex2dd hex2dd.c)
