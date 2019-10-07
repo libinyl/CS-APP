@@ -1,1 +1,1 @@
-add_executable(dd2hex dd2hex.c)
+add_executable(socket socket.c)

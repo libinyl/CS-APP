@@ -1,11 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <arpa/inet.h>
-#include <sys/socket.h>
-#include <sys/types.h>
+#include "../include/csapp.h"
 
 
 int main(int argc, char *args[])
 {
-    int cliendfd = socket(AF_INET, SOCK_STREAM, 0);
+    int fd1, fd2;
+
+    fd1 = open("/etc", O_RDONLY, 0);
+    printf("%d",fd1);
+    close(fd1);
+
+    printf("%d",fd1);
+
+    fd2 = open("/etc",O_RDONLY,0);
+    printf("%d",fd2);
+    printf("%d",fd2);
+    close(fd2);
+    printf("%d",fd2);
 }

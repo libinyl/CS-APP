@@ -17,3 +17,7 @@ struct in_addr {
 IP 地址总是**大端序**.
 
 IP 地址通常被描述为人类可读的*点分十进制*表示法.
+
+## Socket 编程
+
+![socket编程](/images/socket.jpg)

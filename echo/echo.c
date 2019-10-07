@@ -1,11 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <arpa/inet.h>
-#include <sys/socket.h>
-#include <sys/types.h>
+#include "../include/csapp.h"
 
-
-int main(int argc, char *args[])
+int main(int argc,char* args[])
 {
-    int cliendfd = socket(AF_INET, SOCK_STREAM, 0);
+    int clientfd;
+    char *host, *port, buf[MAXLINE];
+    rio_t rio;
+
+    if(argc!=3)
+    {
+        fprintf(stderr,"usage:%s <host> <port>\n",args[0]);
+        exit(0);
+    }
+    host = args[1];
+    port = args[2];
+
+    clientfd = Open_clientfd(host,port);
+
+
 }

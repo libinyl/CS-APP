@@ -1,1 +1,1 @@
-add_executable(socket socket.c)
+add_executable(echo echo.c)

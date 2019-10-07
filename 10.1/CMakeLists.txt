@@ -1,1 +1,1 @@
-add_executable(socket socket.c)
+add_executable(10.1 10.1.c)
